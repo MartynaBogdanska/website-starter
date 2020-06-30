@@ -1,0 +1,74 @@
+{
+    "website": {
+        "name": "website name",
+        "url": "#",
+        "meta": {
+            "og": {
+                "description": "",
+                "image": ""
+            }
+        }
+    },
+    "skipLink": {
+        "name": "Skip to main content",
+        "href": "#main"
+    },
+    "site": {
+        "menu": {
+            "home": {
+                "label": "Home",
+                "dir": "/",
+                "hidden": true
+            },
+            "services": {
+                "label": "Services",
+                "href": "#services",
+                "section": true
+            },
+            "price": {
+                "label": "Prices",
+                "href": "#prices",
+                "section": true
+            },
+            "about": {
+                "label": "About",
+                "href": "#about",
+                "section": true
+            },
+            "dropdown": {
+                "label": "Dropdown List",
+                "sublinks": {
+                    "dropdownitem1": {
+                        "label": "Dropdown Item 1",
+                        "href": "dropdownitem1"
+                    },
+                    "dropdownitem2": {
+                        "label": "Dropdown Item 2",
+                        "href": "https://getbootstrap.com/docs/4.5/",
+                        "external": true
+                    }
+                }
+            },
+            "internal": {
+                "name": "internal",
+                "label": "Internal Page",
+                "href": "internal"
+            },
+            "external": {
+                "label": "External Link",
+                "href": "https://getbootstrap.com/docs/4.5/",
+                "external": "true"
+            }
+        },
+
+        "footerlinks": [{
+                "label": "Privacy policy",
+                "link": "policy"
+            },
+            {
+                "label": "Designed by MB",
+                "link": "https://www.behance.net/martynabrys"
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+//
+// COMPONENTS > NAVIGATION
+//
+
+/**
+Fixed main navigation on scroll
+**/
+
+#wrapper-navbar {
+    transition: all .5s ease;
+    #site-navbar {
+        background-color: white;
+        z-index: 100;
+        &.scrolled {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            background: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
+            font-size: 0.8rem;
+            transition: all .5s ease;
+            animation: smoothScroll .5s forwards;
+            &.navbar {
+                transition: all .5s ease;
+            }
+            a {
+                color: white;
+                &.dropdown-item {
+                    font-size: 0.8rem;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    // width: 100%;
+}

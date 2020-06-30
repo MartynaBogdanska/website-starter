@@ -1,0 +1,20 @@
+{
+    "name": "Website Full Name",
+    "short_name": "Website Short Name",
+    "start_url": "/index.html",
+    "icons": [{
+            "src": "/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "display": "standalone",
+    "orientation": "portrait"
+}

@@ -1,0 +1,12 @@
+// Variables import
+@import "variables/colors";
+@import "variables/typography";
+// Base import
+@import "base/body.scss";
+@import "base/content.scss";
+@import "base/footer.scss";
+@import "base/header.scss";
+@import "base/html.scss";
+@import "base/type.scss";
+// Components import
+@import "components/navigation.scss";

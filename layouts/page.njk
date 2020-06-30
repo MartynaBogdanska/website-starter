@@ -1,0 +1,9 @@
+{% extends "./layouts/markup.njk" %}
+
+{% block content %}
+
+<div class="container inner-page">
+<p><a href="{{ relative }}">Home</a> > <a href="{{ request.url }}">{{ title }}</a></p>
+{{ contents | safe }}
+</div>
+{% endblock %}
