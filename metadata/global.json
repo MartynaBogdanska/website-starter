@@ -63,11 +63,11 @@
 
         "footerlinks": [{
                 "label": "Privacy policy",
-                "link": "policy"
+                "href": "policy"
             },
             {
                 "label": "Designed by MB",
-                "link": "https://www.behance.net/martynabrys"
+                "href": "https://www.behance.net/martynabrys"
             }
         ]
     }
