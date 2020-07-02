@@ -2,15 +2,15 @@
 // BASE > HEADER
 //
 header.hero-image {
-    height: 100vh;
-    background: #48c6ef;
+    background: #48C6EF;
     /* fallback for old browsers */
-    background: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
+    background: linear-gradient(to right, #48C6EF 0%, #6F86D6 100%);
+    height: 100vh;
     .hero-text {
         position: absolute;
-        margin: 0 auto;
         top: 50%;
         left: 50%;
+        margin: 0 auto;
         transform: translate(-50%, -50%);
     }
 }

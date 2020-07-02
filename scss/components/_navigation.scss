@@ -7,20 +7,20 @@ Fixed main navigation on scroll
 **/
 
 #wrapper-navbar {
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     #site-navbar {
-        background-color: white;
         z-index: 100;
+        background-color: white;
         &.scrolled {
             position: fixed;
-            width: 100%;
             top: 0px;
-            background: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
+            background: linear-gradient(to right, #48C6EF 0%, #6F86D6 100%);
+            width: 100%;
             font-size: 0.8rem;
-            transition: all .5s ease;
-            animation: smoothScroll .5s forwards;
+            transition: all 0.5s ease;
+            animation: smoothScroll 0.5s forwards;
             &.navbar {
-                transition: all .5s ease;
+                transition: all 0.5s ease;
             }
             a {
                 color: white;
