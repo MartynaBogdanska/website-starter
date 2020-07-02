@@ -9,6 +9,15 @@
             }
         }
     },
+    "sociallinks": {
+        "facebook": {
+            "href": "https://www.facebook.com/"
+        },
+        "instagram": {
+            "href": "https://www.instagram.com/"
+        },
+        "linkedin": "https://www.linkedin.com/"
+    },
     "skipLink": {
         "name": "Skip to main content",
         "href": "#main"
@@ -66,7 +75,7 @@
                 "href": "policy"
             },
             {
-                "label": "Designed by MB",
+                "label": "Designed with by MB",
                 "href": "https://www.behance.net/martynabrys"
             }
         ]
