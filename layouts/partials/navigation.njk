@@ -1,0 +1,71 @@
+<div id="wrapper-navbar">
+    <nav id="site-navbar" class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="{{ relative }}">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    {% for key, item in global.site.menu %}
+                        {% if not item.hidden %}
+                            <li class="nav-item dropdown" role="presentation">
+                                {% if item.sublinks %}
+                                    <a 
+                                    class="nav-link dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    href="{{ item.href }}">{{ item.label }}</a>
+                                
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        {% for subkey, subitem in item.sublinks %}
+                                            {% if subitem.external %}
+                                                    <a 
+                                                    class="dropdown-item"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    href="{{ subitem.href }}">{{ subitem.label }}</a>
+                                            
+                                            {% else %}
+                                                    <a 
+                                                    class="dropdown-item {% if page_title == item.name %}is-active{% endif %}"
+                                                    href="{{ relative }}{{ key | replace('home', '') }}/{{ subkey | replace('home', '') }}">{{ subitem.label }}</a>
+                                            
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {% if item.external %}
+                                        <a class="nav-link"
+                                        href="{{ item.href }}"
+                                        target="_blank"
+                                        >{{ item.label }}</a>
+                                    {% else %}
+                                        {% if item.section %}
+                                            <a class="nav-link"
+                                            href="{{ relative }}{{ item.href }}"
+                                            >{{ item.label }}</a>
+                                            
+                                        {% else %}
+                                            <a class="nav-link {% if page_title == item.name %}is-active{% endif %}"
+                                            href="{{ relative }}{{ key | replace('home', '') }}/{{ subkey | replace('home', '') }}"
+                                            >{{ item.label }}</a>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+
+                    <!-- Social Media links -->
+                    <div class="d-flex align-items-center ml-3">
+                        {% for key, item in global.sociallinks %}
+                        <a href="{{ item.href }}" target="_blank" class="ml-3"><i class="{{ item.fontawesome }}"></i></a>
+                        {% endfor %}
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

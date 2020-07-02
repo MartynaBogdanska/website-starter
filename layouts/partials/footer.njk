@@ -1,0 +1,9 @@
+ <footer class="py-5 border-top border-light">
+    <div class="container">
+        <p class="m-0">© 2020 Brand Name 
+            {% for link in global.site.footerlinks %}
+            | <a href="{{ relative }}{{ link.href }}">{{ link.label }}</a>
+            {% endfor %}
+        </p>
+    </div>
+</footer>
