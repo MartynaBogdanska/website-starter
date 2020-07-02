@@ -11,12 +11,17 @@
     },
     "sociallinks": {
         "facebook": {
+            "fontawesome": "fa fa-facebook",
             "href": "https://www.facebook.com/"
         },
         "instagram": {
+            "fontawesome": "fa fa-instagram",
             "href": "https://www.instagram.com/"
         },
-        "linkedin": "https://www.linkedin.com/"
+        "linkedin": {
+            "fontawesome": "fa fa-linkedin",
+            "href": "https://www.linkedin.com/"
+        }
     },
     "skipLink": {
         "name": "Skip to main content",

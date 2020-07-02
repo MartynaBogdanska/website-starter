@@ -115,9 +115,9 @@
 
                             <!-- Social Media links -->
                             <div class="d-flex align-items-center ml-3">
-                                <a href="{{ global.sociallinks.facebook.href }}" class="ml-3"><i class="fa fa-facebook"></i></a>
-                                <a href="{{ global.sociallinks.instagram.href }}" class="ml-3"><i class="fa fa-instagram"></i></a>
-                                <a href="{{ global.sociallinks.linkedin.href }}" class="ml-3"><i class="fa fa-linkedin"></i></a>
+                                {% for key, item in global.sociallinks %}
+                                <a href="{{ item.href }}" target="_blank" class="ml-3"><i class="{{ item.fontawesome }}"></i></a>
+                                {% endfor %}
                             </div>
                             
                         </ul>

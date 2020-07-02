@@ -15,6 +15,7 @@ Extra features:
 -------
 - Fixed navigation
 - Smooth scroll
+- Fontawesome
 - Favicons
 - Facebook og
 - Manifest json
